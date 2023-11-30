@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vremea</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.js"
+        integrity="sha512-CWVDkca3f3uAWgDNVzW+W4XJbiC3CH84P2aWZXj+DqI6PNbTzXbl1dIzEHeNJpYSn4B6U8miSZb/hCws7FnUZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="jsonCities.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <div class="dropdown">
+                <div class="container">
+                    <input type="text" placeholder="Orașe" class="select">
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu" id="cityDropdown"></ul>
+            </div>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">&nbsp;&nbsp;&nbsp;&nbsp;°c</h1>
+            <h2 class="city">&nbsp;</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity"> &nbsp;&nbsp;&nbsp;&nbsp;%</p>
+                        <p>Precipitații</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">&nbsp;&nbsp;&nbsp;&nbsp; km/h</p>
+                        <p>Viteza vântului</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chartContainer">
+            <canvas id="Chart"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>

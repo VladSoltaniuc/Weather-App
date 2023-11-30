@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', 'Poppins', "sans-serif";
+    box-sizing: border-box;
+}
+
+.active {
+    background: #23242a;
+}
+
+
+body {
+    background-color: #222;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+    margin-left: 97%;
+    position: absolute;
+    top: 80%;
+    right: 12px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+    opacity: 0;
+    transition: opacity 150ms 0.05s ease-in-out, transform 150ms;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, rgb(0, 102, 254), rgb(155, 77, 53));
+    color: #fff;
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    min-width: 300px;
+    min-height: 500px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.container {
+    position: relative;
+}
+
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-top: 50px;
+}
+
+.dropdown {
+    min-width: 15em;
+    position: relative;
+    margin: 2m;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+input {
+    background: #323741;
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background-color: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    width: 100%;
+    transform: translateX((-50%));
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+    overflow: auto;
+    height: 20rem;
+}
+
+.menu li {
+    padding: 0.7em 0.7em 0.5em 1.8em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background: #2a2d35;
+}
+
+p {
+    text-align: center;
+}
+
+.select {
+    background: #323741;
+    color: #fff;
+    display: felx;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.select-clicked {
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover {
+    background: #e2e1e1;
+    color: #323741;
+}
+
+.selected {
+    font-size: 1.2em;
+}
+
+
+.search {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: #323741;
+    color: #d8d7d7;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+#Chart{
+    width: 100px; 
+    height: 700px;
+    opacity: 0.7;
+}
